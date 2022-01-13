@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- FONT HEEBO -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+
+    <header class="header">
+      <div class="container">
+        <input type="checkbox" id="burger-trigger" />
+        <nav class="header-nav">
+          <ul class="nav-items">
+            <li class="nav-item">
+              <a href="" class="item-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="item-link">Posts</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="item-link">Works</a>
+            </li>
+          </ul>
+        </nav>
+        <label
+          for="burger-trigger"
+          class="burger-toggle fas fa-bars"
+          aria-label="Navigation toggle button"
+        ></label>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+      <div class="container flex-container">
+        <div class="hero-content">
+          <h2 class="hero-title">Hi, I am John,<br />Creative Technologist</h2>
+          <p class="hero-text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <button class="hero-btn">Download Resume</button>
+        </div>
+        <picture class="hero-userpic">
+          <source srcset="images/userpic-mob.jpg" media="(max-width: 768px)" />
+          <img src="images/userpic.jpg" alt="user's pic" />
+        </picture>
+      </div>
+    </section>
+
+    <!-- RECENT POSTS -->
+
+    <section class="recent-posts">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Recent posts</h2>
+          <a class="all-posts" href="#">View all</a>
+        </div>
+        <div class="articles">
+          <article class="post">
+            <h3 class="article-header">Making a design system from scratch</h3>
+            <p class="article-data">
+              12 Feb 2020 <span class="separator">&#10072;</span> Design,
+              Pattern
+            </p>
+            <p class="article-text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </article>
+          <article class="post">
+            <h3 class="article-header">
+              Creating pixel perfect icons in Figma
+            </h3>
+            <p class="article-data">
+              12 Feb 2020 <span class="separator">&#10072;</span> Figma, Icon
+              Design
+            </p>
+            <p class="article-text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED WORKS -->
+
+    <section class="featured-works">
+      <div class="container">
+        <h2 class="section-title">Featured works</h2>
+        <div class="work-card">
+          <img class="card-img" src="images/card1.jpg" alt="Dashboard" />
+          <div class="card-content">
+            <h3 class="card-title">Designing Dashboards</h3>
+            <p class="card-data">
+              <span class="year">2020</span>
+              <span class="category">Dashboard</span>
+            </p>
+            <p class="card-text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+        <div class="work-card">
+          <img class="card-img" src="images/card2.jpg" alt="Woman's portrait" />
+          <div class="card-content">
+            <h3 class="card-title">Vibraint portraits of 2020</h3>
+            <p class="card-data">
+              <span class="year">2018</span>
+              <span class="category">Illustration</span>
+            </p>
+            <p class="card-text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+        <div class="work-card">
+          <img class="card-img" src="images/card3.jpg" alt="Unusual letter" />
+          <div class="card-content">
+            <h3 class="card-title">36 Days of Malayalam type</h3>
+            <p class="card-data">
+              <span class="year">2018</span>
+              <span class="category">Typography</span>
+            </p>
+            <p class="card-text">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <footer class="footer">
+    <ul class="social-icons">
+      <li><a href="#" class="fab fa-facebook-square icon"></a></li>
+      <li><a href="#" class="fab fa-instagram icon"></a></li>
+      <li><a href="#" class="fab fa-twitter icon"></a></li>
+      <li><a href="#" class="fab fa-linkedin icon"></a></li>
+    </ul>
+    <p class="copyright">Copyright &#169;2020 All rights reserved</p>
+  </footer>
+</html>

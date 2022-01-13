@@ -1,0 +1,136 @@
+@media screen and (max-width: 768px) {
+  .section-title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 60px;
+    color: #21243d;
+  }
+
+  .header {
+    position: sticky;
+    top: 0;
+    margin-bottom: 0px;
+    padding: 8px 0;
+    background: #edf7fa;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+  }
+
+  #burger-trigger:checked + .header-nav {
+    height: 72px;
+  }
+  .header-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    max-height: 100vh;
+    height: 0px;
+    overflow-y: auto;
+    background-color: #edfdfd;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin-right: 0;
+  }
+
+  .burger-toggle {
+    display: block;
+  }
+
+  /* HERO */
+
+  .hero {
+    margin-bottom: 59px;
+  }
+
+  .flex-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-title {
+    margin-bottom: 22px;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .hero-userpic {
+    margin: 34px 0;
+  }
+
+  /* RECENT POSTS */
+
+  .recent-posts {
+    margin-bottom: 0;
+    background-color: white;
+  }
+
+  .section-header {
+    justify-content: center;
+  }
+
+  .all-posts {
+    display: none;
+  }
+
+  .articles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .post {
+    padding: 12px 0;
+  }
+
+  .article-header {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .article-data {
+    padding-top: 12px;
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+
+  /* FEATURED WORKS */
+
+  .work-card {
+    flex-direction: column;
+  }
+
+  .card-content {
+    padding: 0;
+  }
+
+  .card-title {
+    padding: 16px 0;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .card-data .year {
+    font-size: 16px;
+  }
+
+  .card-data .category {
+    margin-left: 22px;
+    font-size: 16px;
+  }
+
+  .footer {
+    margin-top: 150px;
+    background-color: #edf7fa;
+  }
+}
