@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/favicon-star.png" />
+
+    <title>Vladyslav Vorobiov</title>
+
+    <!-- NORMALIZE -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- FONTS -->
+    <!-- font awesone -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="grid">
+      <!-- SIDEBAR -->
+      <input type="checkbox" id="sidebar-trigger" />
+
+      <aside class="sidebar">
+        <nav class="nav">
+          <!-- Logo -->
+          <a href="#" class="nav-logo focused-nav-logo"></a>
+          <!-- Navigation -->
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#hero" class="nav-link">
+                <i class="nav-link-icon fas fa-home"></i>
+                <span class="nav-link-text">home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">
+                <i class="nav-link-icon fas fa-user"></i>
+                <span class="nav-link-text">about</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#resume" class="nav-link">
+                <i class="nav-link-icon fas fa-id-card"></i>
+                <span class="nav-link-text">resume</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link">
+                <i class="nav-link-icon fas fa-briefcase"></i>
+                <span class="nav-link-text">portfolio</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">
+                <i class="nav-link-icon fas fa-envelope"></i>
+                <span class="nav-link-text">contact</span></a
+              >
+            </li>
+          </ul>
+          <!-- To top button -->
+          <a
+            class="to-top fas fa-chevron-up"
+            href="#to-top"
+            aria-label="scroll to top"
+          ></a>
+        </nav>
+        <!-- For sidebar trigger -->
+        <label
+          for="sidebar-trigger"
+          class="sidebar-toggle fas fa-bars"
+          aria-label="navigation toggle button"
+        ></label>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="content">
+        <div id="to-top"></div>
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero section">
+          <div class="container">
+            <h1 class="hero-title">Vladyslav Vorobiov</h1>
+            <p class="hero-subtitle">I am a Front-End Developer</p>
+            <ul class="hero-social-icons">
+              <li class="hero-social-icon">
+                <a href="#" class="icon-link fab fa-facebook-f"></a>
+              </li>
+              <li class="hero-social-icon">
+                <a href="" class="icon-link fab fa-github"></a>
+              </li>
+              <li class="hero-social-icon">
+                <a href="" class="icon-link fab fa-linkedin-in"></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+
+        <!-- About greetings -->
+        <section id="about" class="about section">
+          <div class="container">
+            <h1 class="section-title">
+              About <span class="highlight-color">me</span>
+            </h1>
+            <div class="about-content">
+              <div class="about-introduction">
+                <div class="greeting">
+                  <span class="greeting-hello">Hello,</span>
+                  <p>
+                    I am Vladyslav Vorobiov, web developer from Odessa, Ukraine.
+                    I have rich experience in web site design, building and
+                    customization, also I am good at WordPress.
+                  </p>
+                </div>
+                <div class="about-actions">
+                  <a
+                    href="#"
+                    download
+                    class="btn btn-secondary hovered-content-item focused-item"
+                    >Download CV</a
+                  >
+                  <a
+                    href="#contacts"
+                    class="btn btn-secondary hovered-content-item focused-item"
+                    >Hire me</a
+                  >
+                </div>
+              </div>
+              <div class="about-photo">
+                <img src="images/user-pic.jpg" alt="my avatar" />
+              </div>
+            </div>
+
+            <!-- About skills list -->
+            <div class="about-skills">
+              <h2 class="section-subtitle">
+                here are <span class="highlight-color">my skills</span>
+              </h2>
+              <ul class="skills-list">
+                <li class="skills-list-item hovered-content-item">
+                  <a
+                    href="https://ru.wikipedia.org/wiki/HTML5"
+                    target="_blank"
+                    class="skill-link"
+                  >
+                    <img
+                      src="images/skills/skills-logo-html.svg"
+                      class="skill-img"
+                      alt="HTML5 Logo"
+                    />
+                    <h4 class="skill-name html">HTML5</h4>
+                  </a>
+                </li>
+                <li class="skills-list-item hovered-content-item">
+                  <a
+                    href="https://ru.wikipedia.org/wiki/CSS"
+                    target="_blank"
+                    class="skill-link"
+                  >
+                    <img
+                      src="images/skills/skills-logo-css.svg"
+                      class="skill-img"
+                      alt="CSS3 Logo"
+                    />
+                    <h4 class="skill-name css">CSS3</h4>
+                  </a>
+                </li>
+                <li class="skills-list-item hovered-content-item">
+                  <a
+                    href="https://ru.wikipedia.org/wiki/JavaScript"
+                    target="_blank"
+                    class="skill-link"
+                  >
+                    <img
+                      src="images/skills/skills-logo-js.svg"
+                      class="skill-img"
+                      alt="JavaScript Logo"
+                    />
+                    <h4 class="skill-name javascript">JavaScript</h4>
+                  </a>
+                </li>
+                <li class="skills-list-item hovered-content-item">
+                  <a
+                    href="https://ru.wikipedia.org/wiki/Sass"
+                    target="_blank"
+                    class="skill-link"
+                  >
+                    <img
+                      src="images/skills/skills-logo-sass.svg"
+                      class="skill-img"
+                      alt="SASS Logo"
+                    />
+                    <h4 class="skill-name sass">SASS</h4>
+                  </a>
+                </li>
+                <li class="skills-list-item hovered-content-item">
+                  <a
+                    href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"
+                    target="_blank"
+                    class="skill-link"
+                  >
+                    <img
+                      src="images/skills/skills-logo-bootstrap.svg"
+                      class="skill-img"
+                      alt="Bootstrap Logo"
+                    />
+                    <h4 class="skill-name bootstrap">Bootstrap</h4>
+                  </a>
+                </li>
+                <li class="skills-list-item hovered-content-item">
+                  <a
+                    href="https://ru.wikipedia.org/wiki/Gulp"
+                    target="_blank"
+                    class="skill-link"
+                  >
+                    <img
+                      src="images/skills/skills-logo-gulp.svg"
+                      class="skill-img"
+                      alt="Gulp Logo"
+                    />
+                    <h4 class="skill-name gulp">Gulp</h4>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- RESUME SECTION -->
+
+        <section id="resume" class="resume section">
+          <div class="container">
+            <h1 class="section-title">
+              my <span class="highlight-color">resume</span>
+            </h1>
+            <div class="resume-content">
+              <!-- EDUCATION -->
+              <div class="education">
+                <h3 class="section-subtitle">
+                  <span
+                    class="highlight-color education-icon fas fa-graduation-cap"
+                  >
+                  </span
+                  >Education
+                </h3>
+                <ul class="resume-list">
+                  <li class="resume-item">
+                    <h4 class="item-title">front-end pro</h4>
+                    <h4 class="item-subtitle highlight-color">
+                      2021 | hillel IT school
+                    </h4>
+                    <p class="item-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Quisque scelerisque diam non nisi semper, et elementum
+                      lorem ornare.
+                    </p>
+                  </li>
+                  <li class="resume-item">
+                    <h4 class="item-title">front-end basic</h4>
+                    <h4 class="item-subtitle highlight-color">
+                      2021 | hillel IT school
+                    </h4>
+                    <p class="item-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Quisque scelerisque diam non nisi semper, et elementum
+                      lorem ornare.
+                    </p>
+                  </li>
+                  <li class="resume-item">
+                    <h4 class="item-title">
+                      department of project management: master's degree in
+                      projects and programs management
+                    </h4>
+                    <h4 class="item-subtitle highlight-color">
+                      2012-2014 | odessa national maritime university
+                    </h4>
+                    <p class="item-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Quisque scelerisque diam non nisi semper, et elementum
+                      lorem ornare.
+                    </p>
+                  </li>
+                  <li class="resume-item">
+                    <h4 class="item-title">
+                      department of port engineering: master's degree in
+                      mechanical engineering
+                    </h4>
+                    <h4 class="item-subtitle highlight-color">
+                      2008-2014 | odessa national maritime university
+                    </h4>
+                    <p class="item-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Quisque scelerisque diam non nisi semper, et elementum
+                      lorem ornare.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <!-- EXPERIENCE -->
+              <div class="experience">
+                <h3 class="section-subtitle">
+                  <span class="highlight-color experience-icon fas fa-pen">
+                  </span
+                  >Experience
+                </h3>
+                <ul class="resume-list">
+                  <li class="resume-item">
+                    <h4 class="item-title">front-end guru</h4>
+                    <h4 class="item-subtitle highlight-color">
+                      nearest furute | somewhere in the universe
+                    </h4>
+                    <p class="item-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Quisque scelerisque diam non nisi semper, et elementum
+                      lorem ornare.
+                    </p>
+                  </li>
+                  <li class="resume-item">
+                    <h4 class="item-title">
+                      Trainee / Simple front-end projects
+                    </h4>
+                    <h4 class="item-subtitle highlight-color">
+                      2021 | hillel IT school
+                    </h4>
+                    <p class="item-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Quisque scelerisque diam non nisi semper, et elementum
+                      lorem ornare.
+                    </p>
+                  </li>
+                  <li class="resume-item">
+                    <h4 class="item-title">Sales & Project Manager</h4>
+                    <h4 class="item-subtitle highlight-color">
+                      2019-2021 | MHM Ukraine Ltd.
+                    </h4>
+                    <p class="item-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Quisque scelerisque diam non nisi semper, et elementum
+                      lorem ornare.
+                    </p>
+                  </li>
+                  <li class="resume-item">
+                    <h4 class="item-title">Mechanical engineer</h4>
+                    <h4 class="item-subtitle highlight-color">
+                      2014-2019 | Dialab Ltd.
+                    </h4>
+                    <p class="item-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Quisque scelerisque diam non nisi semper, et elementum
+                      lorem ornare.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PORTFOLIO SECTION -->
+
+        <section id="portfolio" class="portfolio section">
+          <div class="container">
+            <h1 class="section-title">
+              my <span class="highlight-color">works</span>
+            </h1>
+            <ul class="portfolio-items">
+              <li class="portfolio-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="portfolio-item-link focused-item"
+                >
+                  <img
+                    src="images/portfolio/item1-img.jpg"
+                    class="portfolio-item-img"
+                    alt="Wisdom page"
+                  />
+                  <div class="portfolio-item-footer">
+                    <h3 class="item-footer-name">wisdom page</h3>
+                  </div>
+                </a>
+              </li>
+              <li class="portfolio-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="portfolio-item-link focused-item"
+                >
+                  <img
+                    src="images/portfolio/item2-img.jpg"
+                    class="portfolio-item-img"
+                    alt="Wisdom page"
+                  />
+                  <div class="portfolio-item-footer">
+                    <h3 class="item-footer-name">alivio</h3>
+                  </div>
+                </a>
+              </li>
+              <li class="portfolio-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="portfolio-item-link focused-item"
+                >
+                  <img
+                    src="images/portfolio/item3-img.jpg"
+                    class="portfolio-item-img"
+                    alt="Alivio page"
+                  />
+                  <div class="portfolio-item-footer">
+                    <h3 class="item-footer-name">responsive portfolio</h3>
+                  </div>
+                </a>
+              </li>
+              <li class="portfolio-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="portfolio-item-link focused-item"
+                >
+                  <img
+                    src="images/portfolio/item4-img.jpg"
+                    class="portfolio-item-img"
+                    alt="Responsive portfolio"
+                  />
+                  <div class="portfolio-item-footer">
+                    <h3 class="item-footer-name">animated 3D cube</h3>
+                  </div>
+                </a>
+              </li>
+              <li class="portfolio-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="portfolio-item-link focused-item"
+                >
+                  <img
+                    src="images/portfolio/item5-img.jpg"
+                    class="portfolio-item-img"
+                    alt="Animated 3D cube"
+                  />
+                  <div class="portfolio-item-footer">
+                    <h3 class="item-footer-name">responsive grid gallery</h3>
+                  </div>
+                </a>
+              </li>
+              <li class="portfolio-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="portfolio-item-link focused-item"
+                >
+                  <img
+                    src="images/portfolio/item6-img.jpg"
+                    class="portfolio-item-img"
+                    alt="Responsive grid gallery"
+                  />
+                  <div class="portfolio-item-footer">
+                    <h3 class="item-footer-name">bootstrap teemplate</h3>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- CONTACTS SECTION -->
+
+        <section id="contacts" class="contacts section">
+          <div class="container">
+            <h1 class="section-title">
+              get <span class="highlight-color">in touch</span>
+            </h1>
+            <div class="contacts-content">
+              <ul class="contacts-list">
+                <li class="contacts-item">
+                  <a
+                    href="https://goo.gl/maps/nYJg6F7gnnaJXKxr6"
+                    target="_blank"
+                    class="contacts-item-link focused-item"
+                  >
+                    <span
+                      class="
+                        contacts-item-icon
+                        fas
+                        fa-map-marker-alt
+                        highlight-color
+                      "
+                    >
+                    </span>
+                    <span class="contacts-item-name">Odessa, Ukraine</span>
+                  </a>
+                </li>
+
+                <li class="contacts-item">
+                  <a
+                    href="tel:+380936007727"
+                    target="_blank"
+                    class="contacts-item-link focused-item"
+                  >
+                    <span
+                      class="
+                        contacts-item-icon
+                        fas
+                        fa-phone-alt
+                        highlight-color
+                      "
+                    >
+                    </span>
+                    <span class="contacts-item-name">(+38) 093 600 77 27</span>
+                  </a>
+                </li>
+
+                <li class="contacts-item">
+                  <a
+                    href="mailto:vorobyov.90@gmail.com"
+                    target="_blank"
+                    class="contacts-item-link focused-item"
+                  >
+                    <span
+                      class="
+                        contacts-item-icon
+                        fas
+                        fa-paper-plane
+                        highlight-color
+                      "
+                    >
+                    </span>
+                    <span class="contacts-item-name"
+                      >vorobyov.v90@gmail.com</span
+                    >
+                  </a>
+                </li>
+              </ul>
+              <!-- CONTACTS FORM -->
+              <form class="contact-form">
+                <div class="contact-form-line">
+                  <input
+                    type="text"
+                    name="name"
+                    class="contact-form-field"
+                    placeholder="Name *"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="email"
+                    class="contact-form-field"
+                    placeholder="Email *"
+                    required
+                  />
+                </div>
+                <div class="contact-form-line">
+                  <input
+                    type="text"
+                    name="subject"
+                    class="contact-form-field"
+                    placeholder="Subject *"
+                    required
+                  />
+                </div>
+                <div class="contact-form-line">
+                  <textarea
+                    name="message"
+                    rows="7"
+                    class="contact-form-field"
+                    placeholder="Write message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary focused-item">
+                  send message
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
