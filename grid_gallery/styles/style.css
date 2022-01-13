@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  font-family: "Yantramanav", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  height: 100vh;
+  max-width: 1140px;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-rows: repeat(3, minmax(200px, 1fr));
+  grid-gap: 5px;
+  grid-template-areas:
+    "camera sea sea sun"
+    "store sea sea sun"
+    "nyc nyc knitting activity";
+}
+
+.camera {
+  grid-area: camera;
+}
+
+.sea {
+  grid-area: sea;
+}
+
+.sun {
+  grid-area: sun;
+}
+
+.store {
+  grid-area: store;
+}
+
+.nyc {
+  grid-area: nyc;
+}
+
+.knitting {
+  grid-area: knitting;
+}
+
+.activity {
+  grid-area: activity;
+}
+
+/* MODIFICATORS */
+
+/* for card fogging in hover */
+
+.--fogging:hover .content-img {
+  opacity: 0.7;
+}
+
+/* for display inner-top card content in hover */
+
+.--display-inner:hover .card-inner-top {
+  opacity: 1;
+}
+
+/* for bigger subcategory card font  */
+
+.card-inner-bottom .--bigger-font {
+  font-size: 2.2rem;
+}
+
+/* COMMON STYLES */
+
+.camera,
+.sea,
+.sun,
+.store,
+.nyc,
+.knitting,
+.activity {
+  position: relative;
+  background-color: #000;
+  opacity: 1;
+}
+
+.content-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.5s ease;
+}
+
+/* CARD INNER TOP */
+
+.card-inner-top {
+  padding: 0 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 3%;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: #fff;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.card-inner-top .left-side {
+  display: flex;
+  align-items: center;
+}
+
+.card-inner-top .little-smile {
+  margin: 0 8px;
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.card-inner-top .author-link:hover {
+  text-decoration: underline;
+}
+
+.card-inner-top .date {
+  padding-left: 5px;
+}
+
+.card-inner-top .icon {
+  font-size: 0.8rem;
+  margin-right: 8px;
+}
+
+.card-inner-top .counter {
+  padding-left: 5px;
+}
+
+.card-inner-top .counter:hover {
+  text-decoration: underline;
+}
+
+/* CARD INNER BOTTOM */
+
+.card-inner-bottom {
+  width: 100%;
+  position: absolute;
+  bottom: 15%;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.category {
+  display: inline;
+  margin: 0 auto;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgba(200, 200, 200, 0.5);
+}
+
+.subcategory {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.subcategory:hover {
+  color: #0f70e8;
+  transition: 0.5s;
+}
+
+/* MEDIA for small screens  */
+
+@media only screen and (max-width: 681px) {
+  .grid-container {
+    grid-gap: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "camera"
+      "sea"
+      "sun"
+      "store"
+      "nyc"
+      "knitting"
+      "activity";
+  }
+
+  .card-inner-bottom .subcategory {
+    font-size: 1.2rem;
+  }
+}
