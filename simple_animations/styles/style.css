@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* TRANSITION 01 */
+
+section {
+  height: 300px;
+  text-align: center;
+}
+
+.box {
+  display: inline-block;
+  margin: 0 auto;
+  height: 150px;
+  width: 300px;
+}
+
+/* 1 */
+
+.shadow {
+  font-size: 48px;
+  color: rgb(207, 105, 57);
+  font-weight: bold;
+  transition: all 1s ease 0.25s;
+}
+
+.shadow:hover {
+  text-shadow: 5px 5px 2px rgb(248, 200, 177);
+}
+
+/* 2 */
+
+.section2 .box {
+  border: 5px solid transparent;
+  background-color: orange;
+  transition: all 1s ease 0.25s;
+}
+
+.section2 .box:hover {
+  background-color: rgb(165, 116, 39);
+  border: 5px solid orange;
+  border-radius: 200px/40px 0px;
+}
+
+/* 3 */
+
+.section3 .box {
+  border: 8px solid transparent;
+  background-color: rgb(168, 78, 168);
+  transition: all 1s ease 0.25s;
+}
+
+.section3 .box:hover {
+  background-color: rgb(194, 133, 194);
+  border: 8px solid lightgrey;
+  border-style: inset;
+}
+
+/* 4 */
+
+.section4 .box {
+  outline: 8px solid transparent;
+  border: 8px solid rgb(180, 137, 17);
+  background-color: rgb(132, 192, 83);
+  transition: all 1s ease 0.25s;
+}
+
+.section4 .box:hover {
+  outline-color: teal;
+  outline-offset: 10px;
+}
+
+/* 5 */
+
+.section5 .box {
+  background-color: rgb(65, 73, 59);
+  transition: all 1s ease 0.25s;
+}
+
+.section5 .box:hover {
+  width: 350px;
+  height: 100px;
+  box-shadow: 0 10px 10px -5px rgb(149, 27, 27);
+}
+
+/* TRANSITION 02 */
+
+.squares {
+  position: relative;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 200px;
+}
+
+.squares::before {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  content: "Hi!";
+  font-size: 50px;
+  text-align: center;
+  z-index: -1;
+}
+
+.squares div {
+  width: 100px;
+  height: 100px;
+  transition: all 1s ease 0.25s;
+}
+
+.square1 {
+  background-color: red;
+  transform-origin: top left;
+}
+
+.squares:hover .square1 {
+  transform: rotate(90deg);
+}
+
+.square2 {
+  transform-origin: top right;
+  background-color: yellow;
+}
+
+.squares:hover .square2 {
+  transform: rotate(-90deg);
+}
+
+.square3 {
+  transform-origin: bottom left;
+  background-color: blue;
+}
+
+.squares:hover .square3 {
+  transform: rotate(-90deg);
+}
+
+.square4 {
+  transform-origin: bottom right;
+  background-color: green;
+}
+
+.squares:hover .square4 {
+  transform: rotate(90deg);
+}
+
+/* ANIMATION 01 */
+
+/* 1st method */
+
+.text1 {
+  margin: 0 auto;
+  max-height: 150px;
+  max-width: 200px;
+  text-align: center;
+  line-height: 150px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: blueviolet;
+  font-size: 30px;
+  animation: scale 2s ease-in-out infinite alternate forwards;
+}
+
+.text1:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  90% {
+    transform: scale(1);
+  }
+}
+
+/* 2nd method */
+
+.text2 {
+  margin: 0 auto;
+  max-height: 150px;
+  max-width: 200px;
+  text-align: center;
+  line-height: 150px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: blueviolet;
+  font-size: 30px;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+}
+
+/* ANIMATION 02 */
+
+.rotateme {
+  margin: 200px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.figure1 {
+  position: absolute;
+  min-width: 200px;
+  min-height: 200px;
+  background-color: yellow;
+  animation: rotation 5s linear infinite, colors1 5s infinite alternate;
+}
+
+.figure2 {
+  position: absolute;
+  min-width: 150px;
+  min-height: 150px;
+  background-color: green;
+  animation: rotation 4s linear infinite, colors2 4s infinite alternate;
+}
+
+.figure3 {
+  position: absolute;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: blue;
+  animation: rotation 3s linear infinite, colors3 3s infinite alternate;
+}
+
+@keyframes rotation {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes colors1 {
+  0% {
+    background-color: mediumpurple;
+  }
+  50% {
+    background-color: tomato;
+  }
+  100% {
+    background-color: mediumspringgreen;
+  }
+}
+
+@keyframes colors2 {
+  0% {
+    background-color: teal;
+  }
+  50% {
+    background-color: violet;
+  }
+  100% {
+    background-color: indigo;
+  }
+}
+
+@keyframes colors3 {
+  0% {
+    background-color: orange;
+  }
+  50% {
+    background-color: lightpink;
+  }
+  100% {
+    background-color: maroon;
+  }
+}
