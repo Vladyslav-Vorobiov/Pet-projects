@@ -1,0 +1,15 @@
+/* CAROUSEL */
+
+.lessheight {
+  height: 512px;
+  object-fit: cover;
+}
+
+/* ARTICLES */
+
+@media screen and (max-width: 768px) {
+  .lower-text {
+    font-size: 24px;
+    font-weight: 400;
+  }
+}

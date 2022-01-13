@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnlyBootstrap</title>
+    <!-- BOOTSTRAP CONNECTION -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header sticky-top">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Carousel</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav"
+            aria-controls="nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link disabled"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Disabled</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- HERO -->
+      <section class="hero">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner d-inline-block">
+            <div class="carousel-item active">
+              <img
+                src="https://icocnews.ru/wp-content/uploads/2015/09/priroda.jpg"
+                class="d-block w-100 lessheight"
+                alt="nature picture"
+              />
+              <div class="carousel-caption d-block text-start">
+                <h5 class="fs-1">First slide label</h5>
+                <p class="fs-4">
+                  Some representative placeholder content for the first slide.
+                </p>
+                <a class="btn btn-lg btn-primary" href="#">Learn more</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://gazetaingush.ru/sites/default/files/pubs/obshchestvo/2021/05/priroda-ingushetii-1200x5401.jpg"
+                class="d-block w-100 lessheight"
+                alt="nature picture"
+              />
+              <div class="carousel-caption d-block text-center">
+                <h5 class="fs-1">Second slide label</h5>
+                <p class="fs-4">
+                  Some representative placeholder content for the second slide.
+                </p>
+                <a class="btn btn-lg btn-primary" href="#">Learn more</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://prometej.info/media/thumbnail/images/articles/o-primirenii-chelovechestva-s-prirodoj-i-s-samim-soboj_poster.jpg"
+                class="d-block w-100 lessheight"
+                alt="nature picture"
+              />
+              <div class="carousel-caption d-block text-end">
+                <h5 class="fs-1">Third slide label</h5>
+                <p class="fs-4">
+                  Some representative placeholder content for the third slide.
+                </p>
+                <a class="btn btn-lg btn-primary" href="#">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- CARDS -->
+
+      <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+          <div class="col">
+            <div class="card border-0">
+              <img
+                width="140"
+                height="140"
+                src="http://lorempixel.com/600/500/"
+                class="rounded-circle mx-auto d-block"
+                alt="some pic"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card One</h5>
+                <p class="card-text mx-2 mb-3">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <a class="btn btn-secondary" href="#">View details »</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0">
+              <img
+                width="140"
+                height="140"
+                src="http://lorempixel.com/800/900/"
+                class="rounded-circle mx-auto d-block"
+                alt="some pic"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card Two</h5>
+                <p class="card-text mx-2 mb-3">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <a class="btn btn-secondary" href="#">View details »</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-0">
+              <img
+                width="140"
+                height="140"
+                src="http://lorempixel.com/700/900/"
+                class="rounded-circle mx-auto d-block"
+                alt="some pic"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card Three</h5>
+                <p class="card-text mx-2 mb-3">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content.
+                </p>
+                <a class="btn btn-secondary" href="#">View details »</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DIVIDER -->
+
+        <hr class="featurette-divider my-5" />
+
+        <!-- ARTICLES -->
+
+        <!-- FIRST ARTICLE -->
+
+        <div class="row featurette align-items-center">
+          <div class="col-md-7">
+            <h2 class="featurette-heading display-5 fw-normal lower-text">
+              First featurette heading.
+              <span class="text-muted">It’ll blow your mind.</span>
+            </h2>
+            <p class="lead">
+              Some great placeholder content for the first featurette here.
+              Imagine some exciting prose here.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img
+              src="https://bipbap.ru/wp-content/uploads/2018/06/img_resize-1.jpg"
+              alt="space"
+              class="img-fluid m-0"
+            />
+          </div>
+        </div>
+
+        <!-- DIVIDER -->
+
+        <hr class="featurette-divider my-5" />
+
+        <!-- SECOND ARTICLE -->
+
+        <div class="row flex-row-reverse featurette align-items-center">
+          <div class="col-md-7 article-content">
+            <h2 class="featurette-heading display-5 fw-normal lower-text">
+              Oh yeah, it’s that good.
+              <span class="text-muted">See for yourself.</span>
+            </h2>
+            <p class="lead">
+              Another featurette? Of course. More placeholder content here to
+              give you an idea of how this layout would work with some actual
+              real-world content in place.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img
+              src="https://bipbap.ru/wp-content/uploads/2018/06/3ee998952c2016c72a9ad131db1ea00d.jpg"
+              alt="autumn"
+              class="img-fluid m-0"
+            />
+          </div>
+        </div>
+
+        <!-- DIVIDER -->
+
+        <hr class="featurette-divider my-5" />
+
+        <!-- THIRD ARTICLE -->
+
+        <div class="row featurette align-items-center">
+          <div class="col-md-7 article-content">
+            <h2 class="featurette-heading display-5 fw-normal lower-text">
+              And lastly, this one.
+              <span class="text-muted">Checkmate.</span>
+            </h2>
+            <p class="lead">
+              And yes, this is the last block of representative placeholder
+              content. Again, not really intended to be actually read, simply
+              here to give you a better view of what this would look like with
+              some actual content. Your content.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img
+              src="https://bipbap.ru/wp-content/uploads/2018/06/chihuahua-samaea-malenikaya-sobaca-v-mire-1024x1024-500x500.jpg"
+              alt="dog"
+              class="img-fluid m-0"
+            />
+          </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <hr class="featurette-divider my-5" />
+
+        <footer class="footer d-flex justify-content-between my-5">
+          <p>
+            &#169; 2017–2021 Company, Inc. &#183;
+            <a href="#">Privacy</a> &#183; <a href="#">Terms</a>
+          </p>
+          <a href="#">Back to top</a>
+        </footer>
+      </div>
+    </main>
+
+    <!-- JS FOR BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
