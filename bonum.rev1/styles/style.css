@@ -7,8 +7,6 @@
 
 body {
   margin: 0;
-  /* color: var(--text-color);
-  background-color: var(--primary-bg-color); */
   font-family: "Montserrat", sans-serif;
   color: #000000;
 }
@@ -40,8 +38,6 @@ a {
   margin: 0 auto;
   padding: 0 15px;
 }
-
-/* =============== SECTION HERO ================ */
 
 .hero {
   padding: 50px 0;
@@ -124,8 +120,6 @@ a {
   font-size: 12px;
 }
 
-/* =========== MAIN =========== */
-
 .content {
   margin-top: 100px;
   font-family: "Cera Pro", sans-serif;
@@ -200,8 +194,6 @@ a {
     margin-left: 110px;
   }
 
-  /* ====== CONTENT ====== */
-
   .content {
     margin-top: 80px;
   }
@@ -237,8 +229,6 @@ a {
   .actions-lang {
     margin-left: 50px;
   }
-
-  /* ====== CONTENT ====== */
 
   .content {
     margin-top: 70px;
@@ -281,8 +271,6 @@ a {
     margin-left: 30px;
   }
 
-  /* ====== CONTENT ====== */
-
   .content-title {
     padding-left: 360px;
     font-size: 22px;
@@ -312,8 +300,6 @@ a {
   .actions-lang {
     margin-left: 126px;
   }
-
-  /* ====== CONTENT ====== */
 
   .content-title {
     padding: 0 0 30px 0;
