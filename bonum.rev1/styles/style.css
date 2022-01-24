@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("fonts.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* color: var(--text-color);
+  background-color: var(--primary-bg-color); */
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* =============== SECTION HERO ================ */
+
+.hero {
+  padding: 50px 0;
+  max-height: 1055px;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.95) 46%,
+      transparent 45%,
+      transparent 76%,
+      #fff 76%
+    ),
+    url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-content {
+  margin: 210px 0 430px 0;
+}
+
+.hero-title {
+  display: inline-block;
+  font-family: "Cera Pro", sans-serif;
+  line-height: 100%;
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  margin-top: 30px;
+  font-size: 14px;
+  writing-mode: vertical-rl;
+  text-align: right;
+  transform: rotate(180deg);
+}
+
+.hero-shop-type {
+  float: right;
+  margin-top: 8%;
+  writing-mode: vertical-rl;
+  font-size: 16px;
+  font-family: "Cera Pro", sans-serif;
+  font-weight: 400;
+}
+
+.hero-shop-year {
+  writing-mode: vertical-rl;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Cera Pro", sans-serif;
+}
+
+.actions {
+  display: flex;
+}
+
+.actions-item {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.burger {
+  margin-right: 110px;
+}
+
+.actions-lang {
+  margin-left: 210px;
+  font-size: 14px;
+}
+
+.actions-lang-selector {
+  font-size: 12px;
+}
+
+/* =========== MAIN =========== */
+
+.content {
+  margin-top: 100px;
+  font-family: "Cera Pro", sans-serif;
+  font-size: 14px;
+}
+
+.content-title {
+  padding: 0 0 50px 720px;
+
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.content-text {
+  display: flex;
+}
+
+.content-text-color {
+  font-size: 16px;
+  font-weight: 400;
+  flex-basis: 50%;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  text-align: right;
+  transform: rotate(180deg);
+}
+
+.content-text-paragraph {
+  max-width: 320px;
+  margin-left: 120px;
+  flex-basis: 50%;
+}
+
+.content-colors {
+  padding: 50px 0 0 50px;
+}
+
+.content-colors-title {
+  display: inline-block;
+  max-width: 440px;
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.content-colors-code {
+  padding-bottom: 28px;
+  float: right;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.content-colors-text {
+  padding-left: 260px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    max-height: 800px;
+    padding: 30px 0 52px;
+  }
+
+  .hero-content {
+    margin: 150px 0 220px 0;
+  }
+
+  .actions-lang {
+    margin-left: 110px;
+  }
+
+  /* ====== CONTENT ====== */
+
+  .content {
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    max-height: 530px;
+    padding: 30px 0 22px;
+  }
+
+  .hero-content {
+    margin: 80px 0 120px 0;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero-subtitle {
+    margin-top: 15px;
+  }
+
+  .burger {
+    margin-right: 50px;
+  }
+
+  .actions-lang {
+    margin-left: 50px;
+  }
+
+  /* ====== CONTENT ====== */
+
+  .content {
+    margin-top: 70px;
+  }
+
+  .content-title {
+    padding-left: 400px;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 692px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    max-height: 458px;
+    padding: 30px 0 22px;
+  }
+
+  .hero-content {
+    margin: 60px 0 60px 0;
+  }
+
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-subtitle {
+    margin-top: 30px;
+  }
+
+  .burger {
+    margin-right: 30px;
+  }
+
+  .actions-lang {
+    margin-left: 30px;
+  }
+
+  /* ====== CONTENT ====== */
+
+  .content-title {
+    padding-left: 360px;
+    font-size: 22px;
+  }
+
+  .content {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .hero-header-logo-magazine,
+  .hero-title,
+  .hero-subtitle {
+    visibility: hidden;
+  }
+
+  .hero-shop-type,
+  .hero-shop-year {
+    font-size: 14px;
+  }
+
+  .burger {
+    margin: 0;
+  }
+
+  .actions-lang {
+    margin-left: 126px;
+  }
+
+  /* ====== CONTENT ====== */
+
+  .content-title {
+    padding: 0 0 30px 0;
+    font-size: 22px;
+  }
+
+  .content-text {
+    flex-direction: column-reverse;
+  }
+
+  .content-text-color {
+    margin-top: 30px;
+  }
+
+  .content-text-paragraph {
+    margin: 0;
+    padding: 0 28px;
+    font-size: 12px;
+  }
+}

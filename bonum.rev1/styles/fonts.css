@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Cera Pro";
+  src: local("Cera Pro Regular"), local("Cera-Pro-Regular"),
+    url("../fonts/CeraPro-Regular.woff") format("woff2"),
+    url("../fonts/CeraPro-Regular.woff") format("woff"),
+    url("../fonts/CeraPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: local("Cera Pro Bold"), local("Cera-Pro-Bold"),
+    url("../fonts/CeraPro-Bold.woff") format("woff2"),
+    url("../fonts/CeraPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
