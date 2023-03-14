@@ -496,6 +496,9 @@ header .navigation__list-items__item {
 header .navigation__list-items__item a {
   color: #21201f;
 }
+header .navigation__list-items__item a:hover {
+  color: #ca483a;
+}
 
 @media (max-width: 576px) {
   header .navigation {
