@@ -480,8 +480,8 @@ footer .contacts__title:before {
 
 @media (max-width: 576px) {
   .btn-book-sm,
-.btn-book-lg,
-.btn-call {
+  .btn-book-lg,
+  .btn-call {
     width: 100%;
     justify-content: center;
   }
